@@ -1,5 +1,8 @@
-import org.drools.core.process.core.datatype.impl.type.StringDataType;
-import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
+-- Copy the jbpm-services *jar into the jbpm-console.war/WEB-INF/lib directory 
+
+-- Configure the handlers in WEB-INF/classes/META-INF/CustomWorkItemHandlers.conf
+"Step4": new com.hernsys.services.Step4WorkItemHandler(),
+
 
 [
   [
