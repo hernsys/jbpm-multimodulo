@@ -1,6 +1,8 @@
-touch README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/hernsys/jbpm-multimodulo.git
-git push -u origin master
+technology:
+* mvn
+* bpmn2
+* spring
+* cxf(rs - ws)
+* jetty
+
+
