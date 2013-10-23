@@ -4,8 +4,18 @@
 
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
+	
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:spring/config/application-context.xml</param-value>
+	</context-param>
+	<listener>
+		<listener-class>
+			org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener>
 
-	<!-- Con esta definición todos los servidcios serán atendidos bajo el contexto /services -->
+	<!-- Con esta definición todos los servidios serán atendidos bajo el contexto /services -->
 	<servlet>
 		<servlet-name>CXFServlet</servlet-name>
 		<servlet-class>

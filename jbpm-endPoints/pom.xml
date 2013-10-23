@@ -9,10 +9,10 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<groupId>com.hernsys</groupId>
-	<artifactId>jbpm-init</artifactId>
+	<artifactId>jbpm-endPoints</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>jbpm-init Maven Webapp</name>
+	<name>jbpm-endPoints Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 
@@ -108,7 +108,7 @@
 
 
 	<build>
-		<finalName>jbpm-init</finalName>
+		<finalName>jbpm-endPoints</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>

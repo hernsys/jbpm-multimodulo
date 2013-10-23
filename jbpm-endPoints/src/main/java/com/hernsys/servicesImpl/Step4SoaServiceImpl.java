@@ -1,4 +1,4 @@
-package como.hernsys.servicesImpl;
+package com.hernsys.servicesImpl;
 
 import javax.jws.WebService;
 

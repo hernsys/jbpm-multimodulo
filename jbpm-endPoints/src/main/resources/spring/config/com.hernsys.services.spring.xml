@@ -10,7 +10,7 @@
 
 	
 	<!--SOA Service -->
-	<bean id="project.webservice" class="como.hernsys.servicesImpl.Step4SoaServiceImpl">
+	<bean id="project.webservice" class="com.hernsys.servicesImpl.Step4SoaServiceImpl">
 	</bean>
 
 	<jaxws:endpoint id="project.webservice.endpoint"
@@ -21,13 +21,10 @@
 	<!--REST Service-->
 	<jaxrs:server id="projectWebServiceRest" address="/projectRest">
 		<jaxrs:serviceBeans>
-			<ref bean="serviceRest" />
+			<ref bean="step4.service" />
 		</jaxrs:serviceBeans>
 	</jaxrs:server>
 
-	<bean id="serviceRest" class="com.hernsys.servicesImpl.ProjectRestServiceImpl" >
-		<property name="hilosExtendThreadService" ref="step4.service"></property>
-	</bean>
 	<bean id="step4.service" class="com.hernsys.servicesImpl.Step4RestServiceImpl" />
 	
 

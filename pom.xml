@@ -10,9 +10,8 @@
 
 
   <modules>
+    <module>jbpm-endPoints</module>    
     <module>jbpm-services</module>
-    <module>jbpm-backend</module>
-    <module>jbpm-init</module>
     <module>jbpm-entities</module>
     <module>jbpm-mock</module>
   </modules>
