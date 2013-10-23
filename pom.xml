@@ -7,8 +7,8 @@
   <packaging>pom</packaging>
   <name>jbpm</name>
   <modules>
-    <module>jbpm-front</module>
     <module>jbpm-services</module>
     <module>jbpm-backend</module>
+    <module>jbpm-init</module>
   </modules>
 </project>

@@ -1,4 +1,4 @@
-package com.hernsys.services;
+package com.hernsys.workItems;
 
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemHandler;
