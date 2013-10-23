@@ -8,42 +8,20 @@
 		<groupId>com.hernsys</groupId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
+	
 	<groupId>com.hernsys</groupId>
-	<artifactId>jbpm-backend</artifactId>
+	<artifactId>jbpm-mock</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>jbpm-backend</name>
+	<name>jbpm-mock</name>
 	<url>http://maven.apache.org</url>
+	
 	<dependencies>
-
-
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		
-		<dependency>
-			<groupId>com.hernsys</groupId>
-			<artifactId>jbpm-services</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.hernsys</groupId>
-			<artifactId>jbpm-mock</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
-		
 	</dependencies>
-	
-	
-	<repositories>
-		<repository>
-			<id>jboss</id>
-			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
-		</repository>
-	</repositories>
-	
-	
-	
+
 </project>
