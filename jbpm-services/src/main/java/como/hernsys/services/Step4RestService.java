@@ -10,7 +10,7 @@ import com.hernsys.entities.Customer;
 @Path("/step4Service")
 
 @Produces("application/xml")
-public interface Step4Service {
+public interface Step4RestService {
 
 	
 	@GET

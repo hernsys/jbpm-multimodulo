@@ -14,8 +14,8 @@
 	<packaging>war</packaging>
 	<name>jbpm-init Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-	
-	
+
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -23,7 +23,7 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.hernsys</groupId>
 			<artifactId>jbpm-services</artifactId>
@@ -39,7 +39,7 @@
 			<artifactId>jbpm-mock</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
-		
+
 		<!-- dependencias para cxf SOA -->
 		<dependency>
 			<groupId>org.apache.cxf</groupId>
@@ -74,12 +74,52 @@
 			<version>1.7.2</version>
 		</dependency>
 		<!-- FIN dependencias para cxf REST -->
-		
-		
+
+
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
 	</dependencies>
-	
-	
+
+
+
 	<build>
 		<finalName>jbpm-init</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>maven-jetty-plugin</artifactId>
+				<configuration>
+					<scanIntervalSeconds>3</scanIntervalSeconds>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
+
+
+
 </project>

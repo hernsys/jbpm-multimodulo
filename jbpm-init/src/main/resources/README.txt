@@ -1,3 +1,6 @@
+-- this application run with jetty -> mvn jetty:run after that
+http://localhost:8080/jbpm-init/
+
 --you could import the files *.bpmn2 in a new proyect in "jbpm console NG" after that you should 
 to generate all forms
 

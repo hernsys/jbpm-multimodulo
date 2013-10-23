@@ -13,5 +13,7 @@
 	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
 	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
 	
+	<!-- Import config files for WebServices, DAO, Spring config, ETC -->                               
+    <import resource="classpath:spring/config/com.hernsys.services.spring.xml" />
 	
 </beans>
