@@ -12,8 +12,8 @@ public class Step4WorkItemHandler implements WorkItemHandler {
 	public void executeWorkItem(WorkItem workItem, WorkItemManager manager) {
 		try{
 			Customer customer = new Customer();
+			customer.setName((String) workItem.getParameter("in_name"));
 			customer.setAge((Integer) workItem.getParameter("in_age"));
-			customer.setEmail((String) workItem.getParameter("in_name"));
 			customer.setEmail((String) workItem.getParameter("in_email"));
 			throw new Exception(); 
 		}catch(Exception e){

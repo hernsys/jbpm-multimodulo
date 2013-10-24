@@ -5,10 +5,9 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
   [
     "name" : "Step4",
     "parameters" : [
-      "To" : new StringDataType(),
-      "From" : new StringDataType(),
-      "Subject" : new StringDataType(),
-      "Body" : new StringDataType()
+      "in_name" : new StringDataType(),
+      "in_age" : new StringDataType(),
+      "in_email" : new StringDataType()
     ],
     "displayName" : "Step4",
     "icon" : "defaulticon.gif"
