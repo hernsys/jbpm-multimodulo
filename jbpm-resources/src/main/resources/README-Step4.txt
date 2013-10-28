@@ -8,13 +8,13 @@
 
 
 
-2) jbpm-services: it has all the WorkItemhandlers so it is the module that you should put in the "jbpm console NG"
+2) jbpm-services: it has all the WorkItemhandlers so it is the module(jbpm-services.jar) that you should put in the "jbpm console NG"
 
 3) Changes in the "jbpm Console NG":
 
 	3.a) You should create the jar jbpm-service.jar 
 		3.a.1) if you is working with .war you should copy this jar into the jbpm-console.war/WEB-INF/lib directory 
-		3.a.2) if you is working in "Dev mode" you should copy this jar into to buildPath 
+		3.a.2) if you is working in "Dev mode" you should add this jar(external jar) into to buildPath 
 
 	3.b) Configure the handlers in WEB-INF/classes/META-INF/CustomWorkItemHandlers.conf, 
 		3.b.1) if you is working with .war this file is in WEB-INF/classes/META-INF/CustomWorkItemHandlers.conf
